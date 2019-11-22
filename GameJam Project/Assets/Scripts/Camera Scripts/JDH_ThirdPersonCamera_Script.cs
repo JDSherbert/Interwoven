@@ -11,7 +11,7 @@ public class JDH_ThirdPersonCamera_Script : MonoBehaviour
     [System.Serializable]
     public class CameraSettings //Movement speeds adjustable in runtime
     {
-        public float distance = 6.0f; //normal distance
+        public float distance = 12.0f; //normal distance
         public float aimDistance = 2.5f; 
         public float minimumClampY = 0.0f; //stops going out of bounds
         public float maximumClampY = 75.0f;
@@ -39,8 +39,6 @@ public class JDH_ThirdPersonCamera_Script : MonoBehaviour
         //make camera
         cameraSetting.camTransform = transform;
         cameraSetting.mainCamera = Camera.main;
-
-
     }
     private void Update()
     {

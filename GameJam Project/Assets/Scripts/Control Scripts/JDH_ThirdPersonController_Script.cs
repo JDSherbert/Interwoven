@@ -94,7 +94,6 @@ public class JDH_ThirdPersonController_Script : MonoBehaviour
             audioSetting.playerSoundPlayer = GetComponent<AudioSource>();
         }
     }
-
     //trigger on any keypress, remaps class settings above for runtime
     public void GetInput()
     {
@@ -137,7 +136,6 @@ public class JDH_ThirdPersonController_Script : MonoBehaviour
                 playerData.playerAnimationController.SetBool("isWalking", true);
                 playerData.playerAnimationController.SetBool("isAiming", false);
             }
-
             if(gameObject.GetComponent<AudioSource>())
             {
                 //timeraudio
@@ -156,13 +154,8 @@ public class JDH_ThirdPersonController_Script : MonoBehaviour
                 }
             }
         }
-
-        //jump method with if Input recieved delay statement
-        Jump();
-
         //Apply force to player
         playerData.playerRBody.velocity = transform.TransformDirection(moveSetting.velocity);
-
     }
 
     //takes the angle of the camera into consideration when the player moves
@@ -178,18 +171,13 @@ public class JDH_ThirdPersonController_Script : MonoBehaviour
 
     void Rotate()
     {
-
         // rotates character based on direction
         moveSetting.targetRotation = Quaternion.Euler(0, moveSetting.angleRotation, 0);
         transform.rotation = Quaternion.Slerp
             (transform.rotation, moveSetting.targetRotation, moveSetting.rotateVel * Time.deltaTime);
-
-
     }
     private void Move()
     {
-
-
         //input delay check
         if (Mathf.Abs(inputSetting.verticalInput) > inputSetting.inputDelay ||
             Mathf.Abs(inputSetting.horizontalInput) > inputSetting.inputDelay)
@@ -205,59 +193,5 @@ public class JDH_ThirdPersonController_Script : MonoBehaviour
             moveSetting.velocity.x = 0;
             //velocity.y = 0;
         }
-
-
-
     }
-
-    void Jump()
-    {
-        //checks if on floor with bool method's raycast
-        if (inputSetting.jumpInput > 0 && CanJump()) //jumping while on floor
-        {
-            //jump
-            moveSetting.velocity.y = moveSetting.jumpVel;
-
-            if (gameObject.GetComponent<Animator>())
-            {
-                //animation
-                playerData.playerAnimationController.SetBool("isIdle", false);
-                playerData.playerAnimationController.SetBool("isWalking", false);
-                playerData.playerAnimationController.SetBool("isJump", true);
-            }
-
-            if (gameObject.GetComponent<AudioSource>())
-            {
-                //audio
-                audioSetting.playerSoundPlayer.PlayOneShot
-                (audioSetting.playerJumpSound, audioSetting.playerSoundVolume);
-            }
-
-        }
-        else if (inputSetting.jumpInput == 0 && CanJump()) //if on floor no jump
-        {
-            moveSetting.velocity.y = 0;
-
-            //animation
-            if (gameObject.GetComponent<Animator>())
-            {
-                playerData.playerAnimationController.SetBool("isJump", false);
-            }
-        }
-        else //falling
-        {
-            //gravity pull, add a clamp if needed
-            moveSetting.velocity.y = Mathf.Clamp(moveSetting.velocity.y, -20, moveSetting.jumpVel);
-            moveSetting.velocity.y -= physicsSetting.downAccel;
-
-            //animation
-            if (gameObject.GetComponent<Animator>())
-            {
-                playerData.playerAnimationController.SetBool("isIdle", false);
-                playerData.playerAnimationController.SetBool("isWalking", false);
-                playerData.playerAnimationController.SetBool("isJump", true);
-            }
-        }
-    }
-
 }
