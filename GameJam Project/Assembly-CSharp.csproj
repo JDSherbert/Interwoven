@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Control Scripts\JDH_PlayerControl_Script.cs" />
+    <Compile Include="Assets\Scripts\Mechanics Scripts\MASB_Enemy_Chase_AI.cs" />
+    <Compile Include="Assets\Scripts\Mechanics Scripts\MASB_Player_Health_Controller.cs" />
+    <Compile Include="Assets\Scripts\Mechanics Scripts\MASB_Reset_Scene.cs" />
     <Compile Include="Assets\Scripts\Mechanics Scripts\MASB_Rotate_Map.cs" />
     <Reference Include="Unity.XR.Management">
       <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
