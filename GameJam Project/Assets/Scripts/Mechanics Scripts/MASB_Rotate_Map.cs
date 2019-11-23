@@ -107,7 +107,7 @@ public class MASB_Rotate_Map : MonoBehaviour
         }
         else if (direction == "z+")
         {
-            transform.RotateAround(Vector3.zero, Vector3.right, 90 * Time.deltaTime);
+            transform.RotateAround(Vector3.zero, Vector3.left, 90 * Time.deltaTime);
             if (Mathf.RoundToInt(transform.eulerAngles.x) >= 89 && Mathf.RoundToInt(transform.eulerAngles.x) < 90)
             {
                 curX = 92;
@@ -139,7 +139,7 @@ public class MASB_Rotate_Map : MonoBehaviour
         }
         else
         {
-            transform.RotateAround(Vector3.zero, Vector3.left, 90 * Time.deltaTime);
+            transform.RotateAround(Vector3.zero, Vector3.right, 90 * Time.deltaTime);
             //Debug.Log(transform.eulerAngles.x);
             if (transform.eulerAngles.x <= 271 && transform.eulerAngles.x > 270)
             {
