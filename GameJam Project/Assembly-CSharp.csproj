@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera Scripts\JDH_ThirdPersonCamera_Script.cs" />
     <Compile Include="Assets\Scripts\Control Scripts\JDH_ThirdPersonController_Script.cs" />
+    <Compile Include="Assets\Scripts\Mechanical Scripts\MASB_Rotate_Map.cs" />
     <Reference Include="Unity.XR.Management">
       <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>
