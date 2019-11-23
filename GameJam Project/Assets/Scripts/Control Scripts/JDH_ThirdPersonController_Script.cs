@@ -58,6 +58,7 @@ public class JDH_ThirdPersonController_Script : MonoBehaviour
     {
         public Rigidbody playerRBody;
         public Animator playerAnimationController;
+        public bool IsPlayerMovable = true;
     }
     
 
@@ -127,7 +128,10 @@ public class JDH_ThirdPersonController_Script : MonoBehaviour
             //do the normal methods because there is an input
             CalculateDirection();
             Rotate();
-            Move();
+            if (playerData.IsPlayerMovable == true)
+            {
+                Move();
+            }
 
             //animation
             if (gameObject.GetComponent<Animator>())
