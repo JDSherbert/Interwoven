@@ -63,45 +63,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Camera Scripts\JDH_ThirdPersonCamera_Script.cs" />
-    <Compile Include="Assets\Scripts\Control Scripts\JDH_ThirdPersonController_Script.cs" />
-    <Compile Include="Assets\Scripts\Mechanical Scripts\MASB_Cube_Manager.cs" />
-    <Compile Include="Assets\Scripts\Mechanical Scripts\MASB_Rotate_Map.cs" />
+    <Compile Include="Assets\Scripts\Control Scripts\JDH_PlayerControl_Script.cs" />
     <Reference Include="Unity.XR.Management">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.Management.Editor">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/FromMSI/GitHubStuff/GameJams/22.11.2019-24.11.2019/GameJam-2019/GameJam Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/JDSherbert/Documents/_Main/Github/Team Insomnia/GameJam Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.0a13/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
