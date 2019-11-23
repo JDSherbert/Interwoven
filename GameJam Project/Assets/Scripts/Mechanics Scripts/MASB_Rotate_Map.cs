@@ -108,40 +108,67 @@ public class MASB_Rotate_Map : MonoBehaviour
         else if (direction == "z+")
         {
             transform.RotateAround(Vector3.zero, Vector3.right, 90 * Time.deltaTime);
-            transform.eulerAngles = new Vector3(Mathf.RoundToInt(transform.eulerAngles.x), transform.eulerAngles.y, transform.eulerAngles.z);
-            if (transform.eulerAngles.x >= 89 && transform.eulerAngles.x < 90)
+            if (Mathf.RoundToInt(transform.eulerAngles.x) >= 89 && Mathf.RoundToInt(transform.eulerAngles.x) < 90)
             {
-                curX = 90;
+                curX = 92;
                 player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
-                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                player.transform.position = new Vector3(player.transform.position.x, 13, 10);
                 transform.eulerAngles = new Vector3(curX, 0, curZ);
             }
-            else if (transform.eulerAngles.x >= 179 && transform.eulerAngles.x < 180)
+            else if (Mathf.RoundToInt(transform.eulerAngles.x) >= 179 && Mathf.RoundToInt(transform.eulerAngles.x) < 180)
             {
                 curX = 180;
                 player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
-                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                player.transform.position = new Vector3(player.transform.position.x, 13, 10);
                 transform.eulerAngles = new Vector3(curX, 0, curZ);
             }
-            else if (transform.eulerAngles.x >= 269 && transform.eulerAngles.x < 270)
+            else if (Mathf.RoundToInt(transform.eulerAngles.x) >= 269 && Mathf.RoundToInt(transform.eulerAngles.x) < 270)
             {
                 curX = 270;
                 player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
-                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                player.transform.position = new Vector3(player.transform.position.x, 13, 10);
                 transform.eulerAngles = new Vector3(curX, 0, curZ);
             }
-            else if (transform.eulerAngles.x >= 359)
+            else if (Mathf.RoundToInt(transform.eulerAngles.x) >= 359)
             {
                 curX = 0;
                 player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
-                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                player.transform.position = new Vector3(player.transform.position.x, 13, 10);
                 transform.eulerAngles = new Vector3(curX, 0, curZ);
             }
         }
         else
         {
             transform.RotateAround(Vector3.zero, Vector3.left, 90 * Time.deltaTime);
-            //player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+            //Debug.Log(transform.eulerAngles.x);
+            if (transform.eulerAngles.x <= 271 && transform.eulerAngles.x > 270)
+            {
+                curX = 269;
+                player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
+                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                transform.eulerAngles = new Vector3(curX, 0, curZ);
+            }
+            else if (transform.eulerAngles.x <= 181 && transform.eulerAngles.x > 180)
+            {
+                curX = 180;
+                player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
+                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                transform.eulerAngles = new Vector3(curX, 0, curZ);
+            }
+            else if (transform.eulerAngles.x <= 91 && transform.eulerAngles.x > 90)
+            {
+                curX = 90;
+                player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
+                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                transform.eulerAngles = new Vector3(curX, 0, curZ);
+            }
+            else if (transform.eulerAngles.x <= 1)
+            {
+                curX = 0;
+                player.GetComponent<JDH_PlayerControl_Script>().canPlayerMove = true;
+                player.transform.position = new Vector3(player.transform.position.x, 13, -10);
+                transform.eulerAngles = new Vector3(curX, 0, curZ);
+            }
         }
     }
 }
