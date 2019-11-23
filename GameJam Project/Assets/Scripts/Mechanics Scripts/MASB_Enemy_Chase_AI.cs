@@ -17,7 +17,7 @@ public class MASB_Enemy_Chase_AI : MonoBehaviour
     {
         if (GetComponentInChildren<MeshRenderer>().isVisible)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 1 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 5 * Time.deltaTime);
             transform.LookAt(player.transform, Vector3.up);
         }
     }
