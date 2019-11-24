@@ -6,13 +6,13 @@ public class MASB_Rotate_Map : MonoBehaviour
 {
     public GameObject player;
     public int curX = 0;
-    public int curZ = 0;
+    public int curZ = 180;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
-        transform.eulerAngles = new Vector3(curX, 0, curZ);
+        transform.eulerAngles = new Vector3(0, 0, 180);
     }
 
     // Update is called once per frame

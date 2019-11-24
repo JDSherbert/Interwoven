@@ -10,15 +10,18 @@ public class MASB_Enemy_Chase_AI : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+        transform.position = new Vector3(-9, 13, 10);
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
         if (GetComponentInChildren<MeshRenderer>().isVisible)
         {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 5 * Time.deltaTime);
-            transform.LookAt(player.transform, Vector3.up);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 1 * Time.deltaTime);
+            transform.LookAt(player.transform, transform.up);
+            transform.position = new Vector3(transform.position.x, 14.6f, transform.position.z);
         }
     }
 

@@ -30,6 +30,11 @@ public class JDH_PlayerControl_Script : MonoBehaviour
 
     public bool canPlayerMove = true;
 
+    private void Start()
+    {
+        transform.position = new Vector3(10, 13, 0);
+    }
+
     public void FixedUpdate()
     {
         GetInput();
@@ -51,25 +56,29 @@ public class JDH_PlayerControl_Script : MonoBehaviour
         if (inputSetting.horizontalInput > 0 && inputSetting.verticalInput == 0)
         {
             //Right
-            transform.position += new Vector3(1 * playerSettings.playerMoveSpeed * Time.deltaTime, 0, 0);
+            //transform.position += new Vector3(1 * playerSettings.playerMoveSpeed * Time.deltaTime, 0, 0);
+            transform.position = new Vector3(transform.position.x + (playerSettings.playerMoveSpeed * Time.deltaTime), transform.position.y, transform.position.z);
             transform.LookAt(new Vector3(100, transform.position.y, transform.position.z), transform.up);
         }
         if (inputSetting.horizontalInput < 0 && inputSetting.verticalInput == 0)
         {
             //Left
-            transform.position += new Vector3(-1 * playerSettings.playerMoveSpeed * Time.deltaTime, 0, 0);
+            //transform.position += new Vector3(-1 * playerSettings.playerMoveSpeed * Time.deltaTime, 0, 0);
+            transform.position = new Vector3(transform.position.x - (playerSettings.playerMoveSpeed * Time.deltaTime), transform.position.y, transform.position.z);
             transform.LookAt(new Vector3(-100, transform.position.y, transform.position.z), transform.up);
         }
         if (inputSetting.verticalInput > 0 && inputSetting.horizontalInput == 0)
         {
             //Up
-            transform.position += new Vector3(0, 0, 1 * playerSettings.playerMoveSpeed * Time.deltaTime);
+            //transform.position += new Vector3(0, 0, 1 * playerSettings.playerMoveSpeed * Time.deltaTime);
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + (playerSettings.playerMoveSpeed * Time.deltaTime));
             transform.LookAt(new Vector3(transform.position.x, transform.position.y, 100), transform.up);
         }
         if (inputSetting.verticalInput < 0 && inputSetting.horizontalInput == 0)
         {
             //Down
-            transform.position += new Vector3(0, 0, -1 * playerSettings.playerMoveSpeed * Time.deltaTime);
+            //transform.position += new Vector3(0, 0, -1 * playerSettings.playerMoveSpeed * Time.deltaTime);
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - (playerSettings.playerMoveSpeed * Time.deltaTime));
             transform.LookAt(new Vector3(transform.position.x, transform.position.y, -100), transform.up);
         }
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -12.5f, 12.5f), transform.position.y, Mathf.Clamp(transform.position.z, -12.5f, 12.5f));
