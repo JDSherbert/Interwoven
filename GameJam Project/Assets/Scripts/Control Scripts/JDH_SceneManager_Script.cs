@@ -36,4 +36,11 @@ public class JDH_SceneManager_Script : MonoBehaviour
         Debug.Log("Exiting...");
         Application.Quit();
     }
+
+    public void FixedUpdate()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+
 }
