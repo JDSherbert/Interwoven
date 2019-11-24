@@ -19,9 +19,6 @@ public class JDH_SceneManager_Script : MonoBehaviour
         public string Level7 = "3rd Ring - Gluttony";
         public string Level8 = "2nd Ring - Lust";
         public string Level9 = "1st Ring - Limbo";
-
-        public string MartinURL = "https://www.youtube.com/user/martiontheawsome1999";
-        public string JDURL = "https://jdsherbertportfolio.wordpress.com/";
     }
     [System.Serializable]
     public class VolumeSlider
@@ -48,15 +45,19 @@ public class JDH_SceneManager_Script : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         Sound();
+        if (GameObject.FindGameObjectsWithTag("SceneManager").Length > 1)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void MartinsURL()
     {
-        Application.OpenURL("sceneData.MartinURL");
+        Application.OpenURL("https://www.youtube.com/user/martiontheawsome1999");
     }
     public void JDURL()
     {
-        Application.OpenURL("sceneData.JDURL");
+        Application.OpenURL("https://jdsherbertportfolio.wordpress.com/");
     }
 
     public void Sound()

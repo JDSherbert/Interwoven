@@ -11890,6 +11890,7 @@ GameObject:
   - component: {fileID: 189888679}
   - component: {fileID: 189888678}
   - component: {fileID: 189888680}
+  - component: {fileID: 361631932}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -11959,6 +11960,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361631928}
   m_Mesh: {fileID: -5495902117074765545, guid: f56d52aba754f3247a8a2b3eafe7d6f3, type: 3}
+--- !u!114 &361631932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361631928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e03c0649a1d382c4e8573a9127129ab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &375757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -19684,7 +19697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalPosition: {x: 0, y: 33.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
