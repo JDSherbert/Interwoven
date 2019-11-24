@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\JDH_SceneManager_Script.cs" />
     <Compile Include="Assets\Scripts\Camera Scripts\JDH_TPSCamera_Script.cs" />
     <Compile Include="Assets\Scripts\Control Scripts\JDH_PlayerControl_Script.cs" />
     <Compile Include="Assets\Scripts\Control Scripts\JDH_TPSController_Script.cs" />
