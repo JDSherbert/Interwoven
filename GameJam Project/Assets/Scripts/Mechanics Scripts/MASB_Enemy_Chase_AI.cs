@@ -45,7 +45,7 @@ public class MASB_Enemy_Chase_AI : MonoBehaviour
                 audioData.walkTimer = 0;
             }
 
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 5 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, 3 * Time.deltaTime);
             transform.LookAt(player.transform, transform.up);
             transform.position = new Vector3(transform.position.x, 14.6f, transform.position.z);
         }
