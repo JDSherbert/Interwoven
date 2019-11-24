@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Treachery -9th Ring.unity
+- path: Assets/Scenes/9th Ring - Treachery.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

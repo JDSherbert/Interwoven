@@ -4,5 +4,56 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/0_MainMenu.unity
+    guid: afd65f5f9ee125b4b90d5e3d7b01a873
+  - enabled: 1
+    path: Assets/Scenes/9th Ring - Treachery.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/8th Ring - Fraud.unity
+    guid: df6a8407caeeec14fa6e13a18f30fe68
+  - enabled: 1
+    path: Assets/Scenes/7th Ring - Violence.unity
+    guid: d668297eab9280748bba7d7f4afdd05c
+  - enabled: 1
+    path: Assets/Scenes/6th Ring - Heresy.unity
+    guid: b955f9b22ea9daf458b4983b7f510d26
+  - enabled: 1
+    path: Assets/Scenes/5th Ring - Anger.unity
+    guid: ecaa636211a45f046815f1eb668a190a
+  - enabled: 1
+    path: Assets/Scenes/4th Ring - Greed.unity
+    guid: 5a54c96431a1fb24396c82bd66875d79
+  - enabled: 1
+    path: Assets/Scenes/3rd Ring - Gluttony.unity
+    guid: 9ed85b1be8a2bb84db0f63806cbe2413
+  - enabled: 1
+    path: Assets/Scenes/2nd Ring - Lust.unity
+    guid: 6c558cd630bc87c4ab89f8dc5847635a
+  - enabled: 1
+    path: Assets/Scenes/1st Ring - Limbo.unity
+    guid: baad61761b34e6443955d8bc0e7091f8
+  - enabled: 1
+    path: Assets/Scenes/The 7 Sins - Envy.unity
+    guid: b9a2d7436cd4cd54695da8012527c181
+  - enabled: 1
+    path: Assets/Scenes/The 7 Sins - Gluttony.unity
+    guid: c5fa8b1479d749547a7e83b2ff9ef2bc
+  - enabled: 1
+    path: Assets/Scenes/The 7 Sins - Greed.unity
+    guid: 005abca8556b93645aae9cc4c55115cb
+  - enabled: 1
+    path: Assets/Scenes/The 7 Sins - Lust.unity
+    guid: 08fbab489558efe4789594e57ddd6099
+  - enabled: 1
+    path: Assets/Scenes/The 7 Sins - Pride.unity
+    guid: eae572de5ff42864eab8a434bcb07958
+  - enabled: 1
+    path: Assets/Scenes/The 7 Sins - Sloth.unity
+    guid: 7bee79ddfd15a664dae9911948bcb7b2
+  - enabled: 1
+    path: Assets/Scenes/The 7 Sins - Wrath.unity
+    guid: 2c0db8556eba1584c91be0ffb1c22325
   m_configObjects: {}
