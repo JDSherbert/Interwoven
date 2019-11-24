@@ -20,9 +20,16 @@ public class JDH_SceneManager_Script : MonoBehaviour
         public string Level8 = "2nd Ring - Lust";
         public string Level9 = "1st Ring - Limbo";
 
-        public string URL = "";
+        public string MartinURL = "https://www.youtube.com/user/martiontheawsome1999";
+        public string JDURL = "https://jdsherbertportfolio.wordpress.com/";
     }
-
+    [System.Serializable]
+    public class VolumeSlider
+    {
+        public UnityEngine.UI.Slider slider;
+        public UnityEngine.Audio.AudioMixer mixer;
+    }
+    public VolumeSlider volslider = new VolumeSlider();
     public SceneData sceneData = new SceneData();
 
     public void PlayGame()
@@ -40,7 +47,22 @@ public class JDH_SceneManager_Script : MonoBehaviour
     public void FixedUpdate()
     {
         DontDestroyOnLoad(gameObject);
+        Sound();
     }
 
+    public void MartinsURL()
+    {
+        Application.OpenURL("sceneData.MartinURL");
+    }
+    public void JDURL()
+    {
+        Application.OpenURL("sceneData.JDURL");
+    }
+
+    public void Sound()
+    {
+        float volume = volslider.slider.value;
+        volslider.mixer.SetFloat("Volume", volume);
+    }
 
 }

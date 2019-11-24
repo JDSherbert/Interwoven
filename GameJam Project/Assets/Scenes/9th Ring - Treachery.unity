@@ -6584,7 +6584,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
     walkSound: {fileID: 8300000, guid: ad14434daaa97914183e2b5dcba9b726, type: 3}
     hurtSound: {fileID: 8300000, guid: 0e9cd7b6b49ac694886e558615022f5d, type: 3}
-    volume: 0.75
+    volume: 0.25
   canPlayerMove: 1
 --- !u!4 &303233750
 Transform:
@@ -11476,8 +11476,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.503
-  m_Pitch: 2.02
+  m_Volume: 0.18
+  m_Pitch: 1.84
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -11487,7 +11487,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -11520,7 +11520,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.48
       inSlope: 0
       outSlope: 0
       tangentMode: 0
