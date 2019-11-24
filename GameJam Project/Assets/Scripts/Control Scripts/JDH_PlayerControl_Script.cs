@@ -46,9 +46,10 @@ public class JDH_PlayerControl_Script : MonoBehaviour
 
     void GetInput()
     {
-        inputSetting.verticalInput = Input.GetAxis(inputSetting.VERTICAL_AXIS);
-        inputSetting.horizontalInput = Input.GetAxis(inputSetting.HORIZONTAL_AXIS);
-        inputSetting.jumpInput = Input.GetAxis(inputSetting.JUMP_AXIS);
+        inputSetting.verticalInput = Input.GetAxisRaw(inputSetting.VERTICAL_AXIS);
+        inputSetting.horizontalInput = Input.GetAxisRaw(inputSetting.HORIZONTAL_AXIS);
+        inputSetting.jumpInput = Input.GetAxisRaw(inputSetting.JUMP_AXIS);
+        
     }
 
     public void Move()
