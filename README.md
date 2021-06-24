@@ -12,7 +12,7 @@ To succeed, the soul needs to get through the maze on each ring, avoiding enemie
 Joshua "JDSherbert" Herbert:
  - Lead Artist, Textures, Models, UI, Lighting, Particles, Music, MainMenu, Co-leader
 
-Martin "Jimbob" Beockett:
+Martin "Jimbob" Brockett:
 - Lead Programmer, Mechanics, Enemy AI, Level Design, Co-leader
 
 **OTHER ROLES**
