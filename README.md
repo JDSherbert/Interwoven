@@ -19,7 +19,9 @@ Martin "Jimbob" Brockett:
 
 George "PK" Allmark:
  - Narrative and thematics
+
 Blighted Iris:
  - Sound Effects and Sound Samples
+
 James England:
  - Support and Quartermaster
