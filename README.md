@@ -8,6 +8,7 @@ There is only one level available, "Treachery", which, in our source material (D
 To succeed, the soul needs to get through the maze on each ring, avoiding enemies and traps, and venture through the portal at the end of each maze. This will take them to the next level up, until they escape into limbo.
 
 **Credits: TEAM INSOMNIA**
+
 Joshua "JDSherbert" Herbert:
  - Lead Artist, Textures, Models, UI, Lighting, Particles, Music, MainMenu, Co-leader
 
@@ -15,6 +16,7 @@ Martin "Jimbob" Beockett:
 - Lead Programmer, Mechanics, Enemy AI, Level Design, Co-leader
 
 **OTHER ROLES**
+
 George "PK" Allmark:
  - Narrative and thematics
 Blighted Iris:
