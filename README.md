@@ -1,27 +1,31 @@
-# Interwoven--GGJ2019
-Play the game for free here: https://jdsherbert.itch.io/interwoven
+![InterwovenBanner](https://user-images.githubusercontent.com/43964243/235797057-b8fecb6a-c8fd-452a-a3bd-5454a9088ae3.png)
 
-**Gamejam Theme: Escape**
-The game is about the 9 rings of hell, and a lost soul's ability to escape to limbo.
-There is only one level available, "Treachery", which, in our source material (Dante's Inferno) is described as a cold, icy wasteland. The game features a rotating main area, to represent the ring that needs to be traversed. There is a demon that can float through the ring to attack the soul as well.
+# Interwoven
 
-To succeed, the soul needs to get through the maze on each ring, avoiding enemies and traps, and venture through the portal at the end of each maze. This will take them to the next level up, until they escape into limbo.
+<!-- Header Start -->
+  <a href = "https://docs.unity.com/"><img align="left" height="40" img width="40" src="https://cdn.simpleicons.org/unity/white"></a> 
+  <a href = "https://learn.microsoft.com/en-us/dotnet/csharp"><img align="left" height="40" img width="40" src="https://cdn.simpleicons.org/csharp"></a>
+  <img align="right" alt="stars badge"  src="https://img.shields.io/github/stars/jdsherbert/unrealengine-filestructureexample"/>
+  <img align="right" alt="forks badge"  src="https://img.shields.io/github/forks/jdsherbert/unrealengine-filestructureexample?label=Fork"/>
+  <img align="right" alt="Visitors"     src="https://visitor-badge.glitch.me/badge?page_id=github.com/jdsherbert/unrealengine-filestructureexample"/>
+  <br></br>
+  -----------------------------------------------------------------------
+  
+  <a href="https://jdsherbert.itch.io/interwoven"> 
+  <img align="top" alt="Play on Itch.io"  src="https://img.shields.io/badge/Play%20on%20Itch.io-FF0B34.svg?style=for-the-badge&logo=Itch.io&logoColor=white&color=black&labelColor=FF0B34"> </a>
+  
+  
+  -----------------------------------------------------------------------
+Repository for the Coventry Gamejam 2019 project Interwoven.
+ 
+ - Itch page: https://jdsherbert.itch.io/interwoven
+ 
+## Credits
 
-**Credits: TEAM INSOMNIA**
+ - 🎨 Josh "JDSherbert" Herbert: Art, UI, VFX, Music
+ - 👓 Martin "Jimbob" Beockett: Programmer, Design, AI, Level Design
+ - 📝 George "PK" Allmark: Narrative
+ - 🔊 Blighted Iris: Sound Design
+ - 📯 James England: Support and Quartermaster
 
-Joshua "JDSherbert" Herbert:
- - Lead Artist, Textures, Models, UI, Lighting, Particles, Music, MainMenu, Co-leader
-
-Martin "Jimbob" Brockett:
-- Lead Programmer, Mechanics, Enemy AI, Level Design, Co-leader
-
-**OTHER ROLES**
-
-George "PK" Allmark:
- - Narrative and thematics
-
-Blighted Iris:
- - Sound Effects and Sound Samples
-
-James England:
- - Support and Quartermaster
+Lemme know if you have any questions or feedback!
